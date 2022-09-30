@@ -328,7 +328,7 @@ export default function createNavigationContainer(Component) {
 
     componentWillUnmount() {
       this._isMounted = false;
-      this.linkHandler.remove?.()
+      this.linkHandler.remove()
       this.subs && this.subs.remove();
 
       if (this._isStateful()) {
